@@ -104,7 +104,7 @@ eval("const { generateText, createElement, validateInput } = __webpack_require__
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("exports.generateText = (name, age) => {\n  // Returns output text\n  return `${name} (${age} years old)`;\n};\n\nexports.createElement = (type, text, className) => {\n  // Creates a new HTML element and returns it\n  const newElement = document.createElement(type);\n  newElement.classList.add(className);\n  newElement.textContent = text;\n  return newElement;\n};\n\nexports.validateInput = (text, notEmpty, isNumber) => {\n  // Validate user input with two pre-defined rules\n  if (!text) {\n    return false;\n  }\n  if (notEmpty && text.trim().length === 0) {\n    return false;\n  }\n  if (isNumber && +text === NaN) {\n    return false;\n  }\n  return true;\n};\n\n\n//# sourceURL=webpack:///./util.js?");
+eval("exports.generateText = (name, age) => {\n  // Returns output text\n  return `${name} (${age} years old)`;\n};\n\nexports.createElement = (type, text, className) => {\n  // Creates a new HTML element and returns it\n  const newElement = document.createElement(type);\n  console.log(type, text, className)\n  newElement.classList.add(className);\n  newElement.textContent = text;\n  console.log(newElement)\n  return newElement;\n};\n\nexports.validateInput = (text, notEmpty, isNumber) => {\n  // Validate user input with two pre-defined rules\n  if (!text) {\n    return false;\n  }\n  if (notEmpty && text.trim().length === 0) {\n    return false;\n  }\n  if (isNumber && +text === NaN) {\n    return false;\n  }\n  return true;\n};\n\n\n//# sourceURL=webpack:///./util.js?");
 
 /***/ })
 

@@ -6,8 +6,10 @@ exports.generateText = (name, age) => {
 exports.createElement = (type, text, className) => {
   // Creates a new HTML element and returns it
   const newElement = document.createElement(type);
+  console.log(type, text, className)
   newElement.classList.add(className);
   newElement.textContent = text;
+  console.log(newElement)
   return newElement;
 };
 
